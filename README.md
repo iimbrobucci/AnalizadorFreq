@@ -12,8 +12,8 @@ Implementación de una Aplicación de Procesado Digital de la Señal para Analiz
 - Número de canales = 1 o 2.
 
 ## Compilación y Ejecución
-Descargue el codigo en una carpeta.
-En la carpeta donde se encuentre el codigo ejecute los siguientes mandatos:
+Descargue el código en una carpeta.
+En la carpeta "src" ejecute los siguientes mandatos:
 - **make**
 - **sudo make install**.
 - **ejecutable -f fichero [opciones]**

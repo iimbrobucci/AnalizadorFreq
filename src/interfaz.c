@@ -170,6 +170,7 @@ void CargarAudio(){
     // Se cambia el estado del programar para cargar un nuevo audio
     PrepararParaNuevoAudio();
 
+
     // Se obtienen los datos del nuevo fichero
     char *ficheroAudio = strdup(fichero);
     if( ObtenerDatosAudio(ficheroAudio)!=0 ) exit(1);
@@ -238,6 +239,8 @@ void PrepararParaNuevoAudio(){
     memset(outSmooth, 0, sizeof(outSmooth));
     memset(smoothS, 0, sizeof(smoothS));
     buffer_index=0;
+
+    establecerTiempoCero(); // Se establce el timpo del audio a cero
     
     LiberarDatosAudio();// Se libera la información del audio anterior
 }

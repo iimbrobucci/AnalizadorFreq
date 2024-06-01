@@ -346,6 +346,10 @@ void SetVolumen(float volume){
 
 }
 
+void establecerTiempoCero(){
+  timeF=0.0;
+}
+
 // Deterima si se ha terminado de reproducir el audio
 int  SonidoTerminado(){
   if( ma_sound_at_end(&sound) == MA_TRUE ){
@@ -360,7 +364,7 @@ void ObtenerTiempo(){
 
   if(audio.pausado==1){
  
-    ma_uint64 currenTime = timeF; // se obtienen el número de frames leidas hasta ahora
+   ma_uint64 currenTime = timeF; // se obtienen el número de frames leidas hasta ahora
 
   float segundos= (float)currenTime/ audio.sampleRate;// se divide el numero de frames entre la frecuencia de muestreo para obtener los segundos
 

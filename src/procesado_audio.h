@@ -51,5 +51,7 @@ void EjecutarFFTWForward(unsigned int frames,int channels, void *inData, int fla
 
 void CrearRaw(unsigned int size, double complex * frecuencias, int flag);
 
+void establecerTiempoCero();
+
 
 #endif

@@ -98,7 +98,7 @@ int main(int argc, char *argv[]){
 	  errno=0;
 	  long int n= strtol(optarg, &endptr, 10);
 	  if(endptr[0]!='\0' || (errno == ERANGE && (n == LONG_MAX || n==LONG_MIN)) || n < 1024 || n > 8192 || (n && (n-1)) == 0){
-	    fprintf(stderr,"%s El tamaño del buffer (-n) debe ser potencia de dos y estar entre [1024,8192]. Por defecto 8192\n", argv[0]);
+	    fprintf(stderr,"%s El tamaño del búfer (-n) debe ser potencia de dos y estar entre [1024,8192]. Por defecto 8192\n", argv[0]);
 	    exit(1);
 	  }
 	  tamanoBuffer=(int)n;

@@ -207,8 +207,8 @@ void ObtenerUsoPrograma(){
     fprintf(stdout, "  -p               : Imprime la información del audio (Formato, número de canales, tamaño de muestra, número total de frames).\n");
     fprintf(stdout, "  -h <alto>        : Especifica la altura de la ventana de interfaz de usuario (rango [600, 1400]). (Por defecto 800).\n");
     fprintf(stdout, "  -w <ancho>       : Especifica el ancho de la ventana de interfaz de usuario (rango [800, 2400]). (Por defecto 1200).\n");
-    fprintf(stdout, "  -n <tamaño>      : Especifica el tamaño del buffer de procesamiento de muestras (rango [1024, 8192]).\n");
-    fprintf(stdout, "                     Solo se permiten potencias de dos (Por defecto 8192). Establece el tamaño del buffer que se usara para calcular\n");
+    fprintf(stdout, "  -n <tamaño>      : Especifica el tamaño del búfer de procesamiento de muestras (rango [1024, 8192]).\n");
+    fprintf(stdout, "                     Solo se permiten potencias de dos (Por defecto 8192). Establece el tamaño del búfer que se usara para calcular\n");
     fprintf(stdout, "                     la Transformada de Fourier de las muestras y, por ende, el número de muestras que serán representadas a la vez\n");
     fprintf(stdout, "                     en la interfaz, es decir, las muestras serán procesadas en tamaños de ventana que pueden variar según (-n).\n");
     fprintf(stdout, "  -i <inicio>      : Especifica el índice de inicio de visualización de frecuencias (rango [0, 200]). (Por defecto 1.0).\n");

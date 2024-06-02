@@ -9,7 +9,7 @@ double amp(double complex z);
 
 void DibujarVentana();
 
-void DibujarSpectogram();
+void DibujarMuestras();
 
 void ActualizarCoordenadas();
 

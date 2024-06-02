@@ -125,7 +125,7 @@ void DibujarVentana(){
     if(audio.spectogram==1) {
       DibujarFrecuencias(); // Se dibujan las frecuencias de audio
     }else{
-      DibujarSpectogram();// Se dibujan las muestras de audio
+      DibujarMuestras();// Se dibujan las muestras de audio
     }
    }
 
@@ -246,12 +246,12 @@ void PrepararParaNuevoAudio(){
 }
 
 // Dibujar las muestras de audio
-void DibujarSpectogram(){
+void DibujarMuestras(){
   
   // Calcula el ancho de cada muestra
   float anchoMuestra= (float)ventana.ancho/tamanoBuffer;
   if(anchoMuestra <1) anchoMuestra=1;
-  
+
   for(int i=0; i<tamanoBuffer; i++){
     
     float muestra= buffer[i]; // se obtiene la muestra a dibujar
